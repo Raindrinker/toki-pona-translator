@@ -5,7 +5,8 @@
 
     </div>
     <div class="accent-content">
-      <a href="https://twitter.com/Raindrinker_dev">mi moku e telo kon</a>
+      <a href="https://tokipona.org/">toki pona made by sonja lang</a>
+      <a href="https://twitter.com/Raindrinker_dev">website made by mi moku e telo kon</a>
     </div>
     <div class="translate-card">
         <div class="translator-block source">
@@ -143,7 +144,10 @@ textarea {
   right: 0px;
   padding: 8px;
   font-weight: bold;
-  opacity: 0.5;
+  opacity: 0.3;
+  display: flex;
+  flex-direction: column;
+  align-items: end;
 }
 
 a {

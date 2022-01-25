@@ -1,13 +1,16 @@
 <template>
   <Translator/>
+  <Dictionary/>
 </template>
 
 <script>
 import Translator from './components/Translator.vue'
+import Dictionary from "./components/Dictionary";
 
 export default {
   name: 'App',
   components: {
+    Dictionary,
     Translator
   }
 }
@@ -22,8 +25,6 @@ export default {
   color: #2c3e50;
 
   height: 100vh;
-  overflow: hidden;
-  overflow-y: hidden;
   margin: 0;
   padding: 0;
 }

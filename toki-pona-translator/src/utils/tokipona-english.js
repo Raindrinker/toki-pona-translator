@@ -13,7 +13,7 @@ const dict = {
     "alasa" : {
         "verb_transitive" : "gather, hunt"
     },
-    "ale," : {
+    "ale" : {
         "modifier" : "all, every, complete, whole",
         "noun" : "everything, anything, life, the universe"
     },
@@ -22,13 +22,13 @@ const dict = {
         "noun" : "bottom, lower part, under, below, floor, beneath"
     },
     "ante" : {
-        "conjuncion" : "otherwise, or else",
+        "conjunction" : "otherwise, or else",
         "modifier" : "different",
         "noun" : "difference",
         "verb_transitive" : "change, alter, modify"
     },
     "anu" : {
-        "conjuncion" : "or"
+        "conjunction" : "or"
     },
     "awen" : {
         "modifier" : "remaining, stationary, permanent, sedentary",
@@ -39,7 +39,7 @@ const dict = {
         "separator" : "(introduces a direct object)"
     },
     "en" : {
-        "conjuncion" : "and (used to coordinate head nouns)"
+        "conjunction" : "and (used to coordinate head nouns)"
     },
     "esun" : {
         "noun" : "market, shop"
@@ -105,16 +105,22 @@ const dict = {
         "quasipreposition" : "with",
         "verb_transitive" : "use"
     },
+    "kijetesantakalu" : {
+        "noun" : "racoon, any animal from the Procyonidae family such as raccoons coatis kinkajous olingos ringtails and cacomistles"
+    },
     "kili" : {
         "noun" : "fruit, pulpy vegetable, mushroom"
     },
     "kin" : {
         "modifier" : "also, too, even, indeed (emphasizes the word(s) before it)"
     },
-    "kipisi" : {},
+    "kipisi" : {
+        "verb_intransitive" : "cut, split, slice",
+        "verb_transitive" : "cut, split, slice"
+    },
     "kiwen" : {
         "modifier" : "hard, solid, stone-like, made of stone or metal",
-        "noun" : "hard thing, rock, stone, metal, mineral, clay"
+        "noun" : "rock, hard thing, stone, metal, mineral, clay"
     },
     "ko" : {
         "noun" : "semi-solid or squishy substance, e.g. paste, powder, gum"
@@ -349,7 +355,11 @@ const dict = {
         "verb_intransitive": "be good",
         "verb_transitive" : "improve, fix, repair, make good"
     },
-    "pu" : {},
+    "pu" : {
+        "noun": "buying and interacting with the official Toki Pona book",
+        "verb_transitive": "apply the official Toki Pona book",
+        "verb_intransitive": "buy or interact with the official Toki Pona book"
+    },
     "sama" : {
         "modifier" : "same, similar, equal, of equal status or position",
         "quasipreposition" : "like, as, seem"
@@ -421,7 +431,7 @@ const dict = {
         "quasipreposition" : "from, by, because of, since"
     },
     "taso" : {
-        "conjuncion" : "but",
+        "conjunction" : "but",
         "modifier" : "only, sole"
     },
     "tawa" : {
@@ -504,6 +514,10 @@ const OBJECT = 2
 
 
 let TPEnglish = {
+
+    getDict() {
+        return dict;
+    },
 
     getTextTranslation(text) {
 
