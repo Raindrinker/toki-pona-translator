@@ -74,7 +74,8 @@ export default {
 }
 
 .tokipona-word {
-  flex-basis: 120px;
+  flex-basis: 150px;
+  flex-shrink: 0;
   font-weight: bold;
 
   display: flex;
