@@ -60,10 +60,12 @@ export default {
   display: flex;
   align-items: center;
   justify-content: center;
+
+  padding-bottom: 128px;
 }
 
 .content {
-  width: 80%;
+  width: 60%;
 }
 
 .word-row {
@@ -119,11 +121,14 @@ export default {
   border-bottom: 1px solid lightgrey;
   padding-bottom: 8px;
   margin-bottom: 32px;
+
+  font-weight: bold;
+  color: #666666;
 }
 
 .logo {
   height: 32px;
   padding-right: 16px;
-  opacity: 0.8;
+  opacity: 0.5;
 }
 </style>
